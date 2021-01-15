@@ -119,12 +119,12 @@
 
 			new THREE.MTLLoader()
 				.setPath('models/')
-				.load('Melitaea_britomartis_sf.mtl', function (materials) {
+				.load('Intergalactic_Spaceship-(Wavefront).mtl', function (materials) {
 					materials.preload();
 					new THREE.OBJLoader()
 						.setMaterials(materials)
 						.setPath('models/')
-						.load('Melitaea_britomartis_sf.obj', function (group) {
+						.load('Intergalactic_Spaceship-(Wavefront).obj', function (group) {
 							let mesh0 = group.children[0];
 							mesh0.material.side = THREE.DoubleSide;
 							// mesh0.scale.set(0.25, 0.25, 0.25); // spaceship scale
